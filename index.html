@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INORDIC</title>
+
+    </head>
+    <body>
+        <div id="menu" class="flex-box flex-center">
+            <div>
+                <a href="#1" class="btn-orange ">Первый</a>
+            </div>
+            <div>
+                <a href="#2"class="btn-orange ">Второй</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange ">Третий</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange ">Четвертый</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange">Пятый</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange">Шестой</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange">Седьмой</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange">Восьмой</a>
+            </div>
+            <div>
+                <a href="#3" class="btn-orange">Девятый</a>
+            </div>
+        </div>
+        <div id="slider">
+            <div id="1" class="slide flex-box " style= " background-image: url('img/1.jpg');">
+                
+                <h3 class="block" >Iphone 13Pro</h3>
+                
+                <h2 class="block" >Просто.Нереально.</h2>
+                
+                <div id="more" class="btn-big block">
+                    <a href="https://ya.ru" class="btn-orange">Подробнее</a>
+                </div>
+            </div>
+            <div id="2" class="slide" style="background-image: url('img/2.jpeg');">
+                <div id="price" class="circle-big round bg-green bg-fix future ">
+                    <div class="flex-box flex-center heigt-max ">
+                        <div>
+                            Цена
+                        </div>
+                    </div>
+                </div>
+                <div id="quality" class="circle-middle round bg-yellow bg-fix future ">
+                    
+                </div>
+                <div id="cpu" class="circle-small round bg-red bg-fix future  ">
+                    
+                </div>
+                <div id="screen" class="circle-middle round bg-black bg-fix future  ">
+                    
+                </div>
+
+            </div>
+            <div id="3" class="slide flex-box" style="background-image: url('img/3.jpeg');">
+
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+
+    #menu {
+       
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+        z-index: 98;
+        background-color: #303030;
+        height: 40px;
+    }
+
+    #menu a {
+        display: block;
+        margin: 20px;
+        font-family:Helvetica;
+        letter-spacing: 0.9px;
+
+    }
+
+    #text-style{
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+
+     .block{
+        display: block;
+     }
+    
+
+    .slide {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        flex-wrap:wrap;
+    
+    }
+
+    #more:hover {
+    
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+
+
+    .flex-box {
+        display: flex;
+    } 
+
+    .flex-center {
+        justify-content: center;
+        align-items: center;
+
+    }
+    .btn-orange {
+        
+        font-size: 11px;
+        font-weight: lighter;
+        
+        color: #D5D5D5;
+        text-decoration: none;
+        
+    }
+
+    .btn-orange:hover {
+        color:#FFFFFF;
+
+    }
+
+
+    .btn-big {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+    .round {
+        border-radius: 50%;
+        }
+
+    .heigt-max {
+        height:100%;
+    }    
+    
+
+
+    
+
+    .btn-big {
+        padding: 20px 40px;
+        font-size: 30px;
+    }
+
+    .circle-big {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-middle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-small {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bg-green {
+        background-color: green;
+    }
+
+    .bg-yellow {
+        background-color: yellow;
+    }
+
+    .bg-red {
+        background-color: red;
+    }
+
+    .bg-black {
+        background-color: black;
+    }
+
+    #price {
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        background-image: url('img/price.jpg');
+        
+
+
+    }
+
+
+
+
+    #quality {
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        background-image: url('img/quality.jpg');
+
+    }
+
+    #cpu {
+        position: absolute;
+        bottom: 300px;
+        left: 400px;
+        background-image: url('img/cpu.jpg');
+
+    }
+
+    #screen {
+        position: absolute;
+        bottom: 200px;
+        right: 200px;
+        background-image: url('img/screen.jpg');
+
+    }
+
+    .bg-fix {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .future {
+        transition: all 0.3s;
+        overflow: hidden;
+
+    }
+
+    .future:hover {
+        transform: scale(1.5);
+        
+        
+
+    }
+
+    .future > div {
+        transition: all 0.3s;
+    }
+
+
+
+    .future > div:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .future > div > div {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        opacity: 0;
+        transition: all 0.3s;
+        
+        
+    }
+
+    .future > div > div:hover {
+        opacity: 1;
+        
+    }
+
+
+</style>
